@@ -1,4 +1,5 @@
 # Portfolio Template
+<!-- # Portfolio Template
 
 ### A beautiful minimal and accessible portfolio template for Developers ✨.
 
@@ -228,4 +229,4 @@ For changing the screenshot:
         </div>
     </div>
 </footer>
-```
+``` -->
