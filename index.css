@@ -552,9 +552,20 @@ body:not(.user-is-tabbing) a:focus {
     margin-bottom: var(--gutter-normal);
 }
 
-@media(min-width: 901px) {
+/* @media(min-width: 901px) {
     .about__text {
         flex: 0 0 35%;
+    }
+    
+    .about__photo-container {
+        flex: 1;
+        margin: 0 var(--gutter-huge) 0 0;
+    }
+} */
+
+@media(min-width: 901px) {
+    .about__text {
+        flex: 0 0 100%;
     }
     
     .about__photo-container {
@@ -610,4 +621,114 @@ body:not(.user-is-tabbing) a:focus {
     .footer {
         padding: var(--gutter-medium) 0;
     } 
+}
+
+/* Skills List Styling */
+.skills-section {
+  margin: 2rem 0;
+}
+
+.skills-section h4 {
+  font-size: var(--font-size-medium);
+  color: var(--white);
+  margin-bottom: 1.5rem;
+  font-family: 'Jost', sans-serif;
+}
+
+.skills-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.skills-column {
+  flex: 1;
+}
+
+.skills-column ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-column li {
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.skills-column li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--pink);
+}
+
+.skills-section h5 {
+  font-size: var(--font-size-normal);
+  color: var(--white);
+  margin-bottom: 1rem;
+  font-family: 'Jost', sans-serif;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 768px) {
+  .skills-list {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .skills-section h4 {
+    font-size: var(--font-size-normal);
+  }
+
+  .skills-section h5 {
+    font-size: var(--font-size-small);
+  }
+}
+
+.certificates-list {
+  margin: 2rem 0;
+}
+
+.certificate-group {
+  margin-bottom: 2.5rem;
+}
+
+.certificate-group:last-child {
+  margin-bottom: 0;
+}
+
+.certificate-group h5 {
+  font-size: var(--font-size-normal);
+  color: var(--white);
+  margin-bottom: 1rem;
+  font-family: 'Jost', sans-serif;
+  font-weight: 400;
+}
+
+.certificate-group ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.certificate-group li {
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.certificate-group li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--pink);
+}
+
+@media screen and (max-width: 768px) {
+  .certificate-group h5 {
+    font-size: var(--font-size-small);
+  }
 }
