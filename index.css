@@ -636,10 +636,17 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .skills-list {
-  display: flex;
-  justify-content: space-between;
-  gap: 2rem;
+  display: block;
   margin-bottom: 3rem;
+}
+
+.skills-list p {
+  margin: 0 0 0.8rem;
+}
+
+.skills-list p strong {
+  display: inline-block;
+  margin-top: 0.8rem;
 }
 
 .skills-column {
@@ -674,11 +681,6 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 @media screen and (max-width: 768px) {
-  .skills-list {
-    flex-direction: column;
-    gap: 1rem;
-  }
-  
   .skills-section h4 {
     font-size: var(--font-size-normal);
   }
